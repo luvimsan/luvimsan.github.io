@@ -11,5 +11,5 @@ Linkedin: [linkedin.com/in/luvimsan](https://linkedin.com/in/luvimsan)
 GPG Key: [pgp key](/key.txt)  
 
 ```sh
-curl luvimsan.github.io/index.txt
+curl https://luvimsan.github.io/index.txt
 ```

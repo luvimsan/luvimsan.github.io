@@ -17,5 +17,5 @@
 {{ $blue }}└────────────────────────────────┘  └────────────────────────────────────────────────┘{{ $reset }}
 
 {{ $yellow }}Legend{{ $reset }}
-{{ $green }}${{ $reset }} {{ $cyan }}curl luvimsan.github.io/index.txt{{ $reset }} {{ $dim }}# Get this page{{ $reset }}
+{{ $green }}${{ $reset }} {{ $cyan }}curl https://luvimsan.github.io/index.txt{{ $reset }} {{ $dim }}# Get this page{{ $reset }}
 
