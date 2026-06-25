@@ -1,11 +1,12 @@
 +++
 date = "2026-02-18T18:19:28+03:00"
 title = "Neomutt guide to set up (proton, gmail)"
+tags = ['linux', 'tools']
 +++
-oetnuhoetnuhhteunt hetnouh hteu
+Neomutt is a terminal based email client, that can connect to multiple emails.
+in this blog, we will dicuss how how to use newmutt with proton and gmail
 
 ## Installing mw (mutt-wizard) from lukesmith
-
 check out lukesmith github for more documentation
 [Luke Smith mutt-wizard github](https://github.com/lukesmithxyz/mutt-wizard#blank)
 
