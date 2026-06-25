@@ -22,6 +22,10 @@ rm -f ~/.gnupg/private-keys.d/*.lock 2>/dev/null
     - `sudo update-alternatives --config pinentry`
     - choose cursor (probably 1)
 
+```c
+int x = 53;
+printf("hello world");
+```
 
 ## Exporting gpg key pairs
 
