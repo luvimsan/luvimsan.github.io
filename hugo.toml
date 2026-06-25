@@ -1,4 +1,33 @@
 baseURL = "https://luvimsan.github.io/"
-locale = "en-us"
-title = "Loaay Waheed's Webpage"
-theme = "hello-friend-ng"
+locale = "en-US"
+title = "loaay Waheed"
+theme = "hugo-bearblog"
+
+# metadata
+author = "loaay Waheed"
+copyright = "Copyright © 2026, Loaay Waheed."
+enableRobotsTXT = true
+
+disableKinds = ["taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
+[permalinks]
+  blog = "/:slug/"
+  tags = "/articles/:slug"
+
+[params]
+  description = "Personal portfolio by lv"
+
+  favicon = "images/favicon.png"
+  images = ["images/share.png"]
+  title = "Loaay Waheed"
+
+  hideMadeWithLine = true
+  enablePostNavigator = true
+  dateFormat = "2006-01-02"
+
+[markup]
+  [markup.highlight]
+    style = 'friendly'
+    lineNos = false
+    lineNumbersInTable = false
+    codeFences = true
