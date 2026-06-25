@@ -1,5 +1,8 @@
 <script>
   document.querySelectorAll('pre').forEach((codeBlock) => {
+    const codeElement = codeBlock.querySelector('code') || codeBlock;
+    const codeText = codeElement.textContent.trim();
+
     const button = document.createElement('button');
     button.className = 'copy-code-button';
     button.type = 'button';
@@ -9,9 +12,7 @@
     codeBlock.appendChild(button);
 
     button.addEventListener('click', () => {
-      const code = codeBlock.querySelector('code') ? codeBlock.querySelector('code').innerText : codeBlock.innerText;
-
-      navigator.clipboard.writeText(code).then(() => {
+      navigator.clipboard.writeText(codeText).then(() => {
         button.innerText = 'Copied!';
         setTimeout(() => { button.innerText = 'Copy'; }, 2000);
       });

@@ -1,0 +1,12 @@
+{{- $url := .Destination -}}
+{{- $isBlank := strings.HasSuffix $url "#blank" -}}
+
+{{- if $isBlank -}}
+  {{- $url = strings.TrimSuffix "#blank" $url -}}
+{{- end -}}
+
+<a href="{{ $url | safeURL }}"
+   {{ with .Title }} title="{{ . }}"{{ end }}
+   {{ if $isBlank }} target="_blank" rel="noopener noreferrer"{{ end }}>
+   {{ .Text | safeHTML }}
+</a>

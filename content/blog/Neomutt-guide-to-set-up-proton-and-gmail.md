@@ -2,12 +2,12 @@
 date = "2026-02-18T18:19:28+03:00"
 title = "Neomutt guide to set up (proton, gmail)"
 +++
-# Neomutt guide to set up (proton, gmail)
+oetnuhoetnuhhteunt hetnouh hteu
 
 ## Installing mw (mutt-wizard) from lukesmith
 
 check out lukesmith github for more documentation
-[Luke Smith mutt-wizard github](https://github.com/lukesmithxyz/mutt-wizard)
+[Luke Smith mutt-wizard github](https://github.com/lukesmithxyz/mutt-wizard#blank)
 
 ```sh
 git clone https://github.com/LukeSmithxyz/mutt-wizard
@@ -80,15 +80,15 @@ mw -a username@proton.me \
 ## Setting up gmail
 
 1. turn on 2fa
-2. generate pass from app password [here](https://myaccount.google.com/apppasswords)
+2. generate pass from app password [here](https://myaccount.google.com/apppasswords#blank)
 3. add it with mw `mw -a email@gmail.com`
 
 
 ---
 ## References
 
-[Luke Smith mutt-wizard github](https://github.com/lukesmithxyz/mutt-wizard)
+[Luke Smith mutt-wizard github](https://github.com/lukesmithxyz/mutt-wizard#blank)
 
-[App password Google](https://myaccount.google.com/apppasswords)
+[App password Google](https://myaccount.google.com/apppasswords#blank)
 
 `man mw`
