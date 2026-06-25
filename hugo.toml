@@ -1,10 +1,10 @@
 baseURL = "https://luvimsan.github.io/"
 locale = "en-US"
-title = "loaay Waheed"
+title = "Loaay Waheed"
 theme = "hugo-bearblog"
 
 # metadata
-author = "loaay Waheed"
+author = "Loaay Waheed"
 copyright = "Copyright © 2026, Loaay Waheed."
 enableRobotsTXT = true
 
@@ -27,7 +27,16 @@ ignoreErrors = ["error-disable-taxonomy"]
 
 [markup]
   [markup.highlight]
-    style = 'friendly'
-    lineNos = false
-    lineNumbersInTable = false
     codeFences = true
+    guessSyntax = true
+    lineNos = false
+    style = 'dracula'
+    noClasses = true
+
+[outputFormats.terminal]
+  mediaType = "text/plain"
+  baseName = "index"
+  isPlainText = true
+
+[outputs]
+  home = ["HTML", "terminal"]
