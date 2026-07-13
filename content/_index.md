@@ -8,7 +8,7 @@ weight = 1
 Email: [luvimsan@gmail.com](mailto:luvimsan@gmail.com#blank)  
 Github: [github.com/luvimsan](https://github.com/luvimsan#blank)  
 Linkedin: [linkedin.com/in/luvimsan](https://linkedin.com/in/luvimsan#blank)  
-GPG Key: [pgp key](/key.txt)  
+GPG Key: [pgp key](/gpg.txt)  
 
 ```sh
 curl https://luvimsan.github.io/index.txt
