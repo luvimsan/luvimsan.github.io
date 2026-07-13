@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ .Content }}
 
-  <h1>Articles</h1>
+  <h2>Articles</h2>
   <ul class="blog-posts">
     {{ range (where .Site.RegularPages "Section" "blog") }}
     <li style="display: block; margin-bottom: 1.2rem;">

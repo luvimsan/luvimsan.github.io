@@ -1,15 +1,9 @@
-+++
-title = "Home"
-menu = "main"
-weight = 1
-+++
+I'm **Loaay Waheed**  known as luvimsan, a computer programmer.
 
-# > Contact Info
-Email: [luvimsan@gmail.com](mailto:luvimsan@gmail.com#blank)  
-Github: [github.com/luvimsan](https://github.com/luvimsan#blank)  
-Linkedin: [linkedin.com/in/luvimsan](https://linkedin.com/in/luvimsan#blank)  
-GPG Key: [pgp key](/gpg.txt)  
+### You can contact:
+- Email: [luvimsan@gmail.com](mailto:luvimsan@gmail.com#blank)  
+- Linkedin: [linkedin.com/in/luvimsan](https://linkedin.com/in/luvimsan#blank)  
+- Github: [github.com/luvimsan](https://github.com/luvimsan#blank)  
+- [other ways](/contact)
 
-```sh
-curl https://luvimsan.github.io/index.txt
-```
+`curl https://luvimsan.github.io/index.txt`
