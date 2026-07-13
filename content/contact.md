@@ -13,6 +13,6 @@ My other online profiles:
 
 - GitHub: [\@luvimsan](https://github.com/luvimsan#blank)
 - GitLab: [\@luvimsan](https://gitlab.com/luvimsan#blank)
-- StackOverflow: [luvimsan](https://stackoverflow.com/users/32785286/luvimsan)
+- StackOverflow: [luvimsan](https://stackoverflow.com/users/32785286/luvimsan#blank)
 
 You can grab my [PGP Key](/gpg.txt)

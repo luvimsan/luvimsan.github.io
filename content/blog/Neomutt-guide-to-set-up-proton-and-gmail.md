@@ -4,7 +4,7 @@ title = "Neomutt guide to set up (proton, gmail)"
 tags = ['linux', 'tools']
 +++
 Neomutt is a terminal based email client, that can connect to multiple emails.
-in this blog, we will dicuss how how to use newmutt with proton and gmail
+in this blog, we will discuss how to use Neomutt with proton and gmail
 
 ## Installing mw (mutt-wizard) from lukesmith
 check out lukesmith github for more documentation
