@@ -52,6 +52,18 @@
       {{ end }}
     </a>
 
+    <a href="https://github.com/luvimsan" target="_blank" rel="noopener noreferrer" aria-label="github" class="footer-link">
+      {{ with resources.Get "icons/github.svg" }}
+        <span>{{ .Content | safeHTML }}</span>
+      {{ end }}
+    </a>
+
+    <a href="https://linkedin.com/in/luvimsan" target="_blank" rel="noopener noreferrer" aria-label="github" class="footer-link">
+      {{ with resources.Get "icons/linkedin.svg" }}
+        <span>{{ .Content | safeHTML }}</span>
+      {{ end }}
+    </a>
+
     <a href="/blog/index.xml" aria-label="RSS Feed" class="footer-link">
       {{ with resources.Get "icons/rss.svg" }}
         <span>{{ .Content | safeHTML }}</span>
