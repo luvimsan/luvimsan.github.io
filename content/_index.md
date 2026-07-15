@@ -6,4 +6,3 @@ I'm **Loaay Waheed** also known as luvimsan, a computer programmer.
 - Github: [@luvimsan](https://github.com/luvimsan)  
 - [other ways](/contact)
 
-`curl https://luvimsan.github.io/index.txt`

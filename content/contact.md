@@ -15,4 +15,7 @@ My other online profiles:
 - GitLab: [\@luvimsan](https://gitlab.com/luvimsan)
 - StackOverflow: [luvimsan](https://stackoverflow.com/users/32785286/luvimsan)
 
+
 You can grab my [PGP Key](/gpg.txt)
+
+also check out this `curl https://luvimsan.github.io/index.txt`

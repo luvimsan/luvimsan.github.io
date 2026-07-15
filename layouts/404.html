@@ -1,0 +1,42 @@
+{{ define "title" }}404{{ end }}
+
+{{ define "main" }}
+
+<style>
+.error-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 60vh;
+  padding: 2rem;
+}
+
+.error-code {
+  font-size: 8rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-family: 'Inter', -apple-system, sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.error-text {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #777;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0 2rem 2rem 0;
+}
+
+</style>
+<div class="error-container">
+  <div class="error-code">404</div>
+
+  <h1 class="error-text">Page Not Found</h1>
+
+</div>
+
+{{ end }}
