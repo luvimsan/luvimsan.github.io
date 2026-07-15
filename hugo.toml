@@ -12,8 +12,7 @@ disableKinds = ["taxonomy"]
 ignoreErrors = ["error-disable-taxonomy"]
 
 [params]
-  description = "Personal portfolio by lv"
-
+  description = "Personal portfolio and technical blog by luvimsan. open-source, linux, neovim and more..."
   favicon = "images/favicon.png"
   images = ["images/share.png"]
   title = "Loaay Waheed"
