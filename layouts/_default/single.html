@@ -1,0 +1,27 @@
+{{ define "main" }}
+{{ if eq .Type "blog" }}{{ if not .Params.menu }}
+<h1>{{ .Title }}</h1>
+<p>
+  <i>
+    <time datetime='{{ .Date.Format "2006-01-02" }}'>
+      {{ .Date.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }}
+    </time>
+  </i>
+  {{ $mins := (.RawContent | replaceRE `(?s)\+\+\+.*?\+\+\+` "" | countwords | div 212.0 | math.Ceil)}}
+  <span> | {{ math.Max $mins 2 }} mins read</span>
+</p>
+{{ end }}{{ end }}
+<content>
+  {{ .Content }}
+</content>
+
+{{ if eq .Type "blog" }}{{ if (.Param "enablePostNavigator")}}
+{{- partial "post_navigator.html" . -}}
+{{ end }}{{ end }}
+
+<p>
+  {{ range (.GetTerms "tags") }}
+  <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+  {{ end }}
+</p>
+{{ end }}
