@@ -1,0 +1,62 @@
+<style>
+.site-footer {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.footer-copyright {
+  font-size: 0.75rem;
+  margin: 0;
+  grid-column: 1;
+  justify-self: start;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  grid-column: 2;
+}
+
+.footer-link {
+  text-decoration: none;
+  display: inline-flex;
+  transition: color 0.1s ease;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+.site-footer::after {
+  content: "";
+  grid-column: 3;
+}
+
+</style>
+
+<footer class="site-footer">
+
+  <!-- Copyright -->
+  <p class="footer-copyright">
+    © {{ now.Format "2006" }} Loaay Waheed
+  </p>
+
+  <!-- Icons -->
+  <nav class="footer-nav">
+    <a href="{{ $.Site.Home.RelPermalink }}" aria-label="Home" class="footer-link">
+      {{ with resources.Get "icons/home.svg" }}
+        <span>{{ .Content | safeHTML }}</span>
+      {{ end }}
+    </a>
+
+    <a href="/blog/index.xml" aria-label="RSS Feed" class="footer-link">
+      {{ with resources.Get "icons/rss.svg" }}
+        <span>{{ .Content | safeHTML }}</span>
+      {{ end }}
+    </a>
+
+  </nav>
+</footer>
