@@ -1,13 +1,10 @@
 +++
-date = "2026-02-14T18:41:24+03:00"
-title = "GPG keys and pass manager"
-tags = ['linux']
+title = "How to Use GPG"
+date = "2026-07-14T16:46:55+03:00"
+tags = ["guides","linux","tools"]
 +++
-## Backup folders
-
-1. back up ~/.gnupg
-1. back up ~/.password-store
-
+GPG stands for **GNU Privacy Guard** 
+ 
 ## Tips for smooth transfer
 
 - fix permisson --> .gnupg (700)
@@ -47,9 +44,3 @@ delete pub keys:        `gpg --delete-key`
 delete private keys:    `gpg --delete-secret-key`
 
 refresh keys:           `gpg --refresh-keys`
-
----
-## SSH keys
-
-- create the ed25519: `ssh-keygen -t ed25519 -C "email"`
-- add the pub key in github

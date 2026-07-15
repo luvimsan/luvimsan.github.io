@@ -1,14 +1,13 @@
 +++
 date = "2026-02-18T18:19:28+03:00"
-title = "Neomutt guide to set up (proton, gmail)"
-tags = ['linux', 'tools']
+title = "Getting started with NeoMutt"
+tags = ['linux', 'tools', 'guides']
 +++
-Neomutt is a terminal based email client, that can connect to multiple emails.
-in this blog, we will discuss how to use Neomutt with proton and gmail
+NeoMutt is a terminal based email client, that can connect to multiple emails.
+in this blog, we will discuss how to use NeoMutt with proton and gmail
 
-## Installing mw (mutt-wizard) from lukesmith
-check out lukesmith github for more documentation
-[Luke Smith mutt-wizard github](https://github.com/lukesmithxyz/mutt-wizard#blank)
+## Installing mw (mutt-wizard) 
+check out lukesmith[^1] github for more documentation
 
 ```sh
 git clone https://github.com/LukeSmithxyz/mutt-wizard
@@ -18,7 +17,7 @@ sudo make install
 
 ## Setting up proton
 
-### 1. Install hydroxide
+1. Install hydroxide
 
 ```sh
 go install github.com/emersion/hydroxide@latest # make sure you have go installed
@@ -34,7 +33,7 @@ mkdir -p ~/.config/systemd/user
 nvim hydroxide.service
 ```
 
-### 5. Set up the service
+5. Set up the service
 ```service
 [Unit]
 Description=Hydroxide daemon
@@ -67,29 +66,21 @@ mw -a username@proton.me \
 -u username@proton.me -f
 ```
 
->for reference
--i --> imap server
--I --> imap port
--s --> smtp server
--S --> smtp port
--u username
--f no connection
+>for reference  
+>-i -->     imap server  
+>-I -->     imap port  
+>-s -->     smtp server  
+>-S -->     smtp port  
+>-u -->     username  
+>-f -->     no connection  
 
-> you are good to go
-
----
 ## Setting up gmail
 
 1. turn on 2fa
-2. generate pass from app password [here](https://myaccount.google.com/apppasswords#blank)
+2. generate pass from app password[^2]
 3. add it with mw `mw -a email@gmail.com`
 
-
----
 ## References
 
-[Luke Smith mutt-wizard github](https://github.com/lukesmithxyz/mutt-wizard#blank)
-
-[App password Google](https://myaccount.google.com/apppasswords#blank)
-
-`man mw`
+[^1]: [Luke Smith mutt-wizard github](https://github.com/lukesmithxyz/mutt-wizard#blank)
+[^2]: [App password Google](https://myaccount.google.com/apppasswords#blank)
