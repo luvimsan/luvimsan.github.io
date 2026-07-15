@@ -1,0 +1,6 @@
+<a href="{{ "" | relURL }}" class="title" style="display: inline-flex; align-items: center; gap: 12px; text-decoration: none;">
+  <img src="{{ "/images/favicon-512.png" | relURL }}" alt="LV Logo" style="height: 1.8em; width: auto; display: block;" />
+
+  <h2 style="margin: 0;">{{ .Site.Title }}</h2>
+</a>
+<nav>{{- partial "nav.html" . -}}</nav>
