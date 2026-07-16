@@ -1,10 +1,12 @@
 +++
 date = "2026-02-18T18:19:28+03:00"
 title = "Getting started with NeoMutt"
+description = "Setting up NeoMutt with proton and gmail"
 tags = ['linux', 'tools', 'guides']
 +++
 NeoMutt is a terminal based email client, that can connect to multiple emails.
-in this blog, we will discuss how to use NeoMutt with proton and gmail
+in this blog, we will discuss how to use it and getting it connected to proton 
+and gmail
 
 ## Installing mw (mutt-wizard) 
 check out lukesmith[^1] github for more documentation
@@ -52,13 +54,15 @@ StandardError=append:%h/.cache/hydroxide.log
 WantedBy=default.target
 ```
 
-### 6. Start the service
+6. Start the service and monitor
 
-`systemctl --user enable --now hydroxide.service`
-`systemctl --user status hydroxide.service` see if it worked
+```sh
+systemctl --user enable --now hydroxide.service
+systemctl --user status hydroxide.service 
+```
 
 
-### 7. Add the account to neomutt
+7. Add the account to neomutt
 ```bash
 mw -a username@proton.me \
 -i 127.0.0.1  -I 1143 \
@@ -74,7 +78,11 @@ mw -a username@proton.me \
 >-u -->     username  
 >-f -->     no connection  
 
-## Setting up gmail
+---
+### Setting up gmail
+It's much easier to setup gmail because it supports imap and smtp by default.
+But for authentication we need to have a pass from google. as well as having 2fa
+enabled.
 
 1. turn on 2fa
 2. generate pass from app password[^2]

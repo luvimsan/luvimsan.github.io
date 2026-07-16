@@ -1,31 +1,58 @@
 +++
-title = "How to Use GPG"
+title = "How to use GPG"
 date = "2026-07-14T16:46:55+03:00"
+description = "Guide of how to use gpg"
 tags = ["guides","linux","tools"]
 +++
-GPG stands for **GNU Privacy Guard** 
- 
-## Tips for smooth transfer
 
-- fix permisson --> .gnupg (700)
-- remove `*.lock`
+GPG stands for **GNU Privacy Guard**. It’s a free, open-source tool that helps
+you encrypt and sign your data. the focus of this blog won't be on the history of
+gpg - you can read more here[^1] - however we will delve into how to use gpg
+- from creating a gpg key
+- to choosing which kind of key pair
+- ending with some useful flags to keep in mind
+
+### Creating a GPG key
+first things first you'll need to make sure you have GPG installed on your system
+you can check with `gpg --version`. if not. check out your package manager or
+[GnuPG official website](https://www.gnupg.org/download/)
+
+Create a gpg key pair
 ```sh
-rm -f ~/.gnupg/*.lock
-rm -f ~/.gnupg/public-keys.d/*.lock 2>/dev/null
-rm -f ~/.gnupg/private-keys.d/*.lock 2>/dev/null
+gpg --full-gen-key
 ```
 
-- use terminal mode if ssh and can`t view gui
-    - `sudo update-alternatives --config pinentry`
-    - choose cursor (probably 1)
+### Choosing which kind of GPG key
 
-```c
-int x = 53;
-printf("hello world");
+- You will be prompted with different types of keys. we will choose a key that 
+supports both signing and encrypting
+```sh
+Please select what kind of key you want:
+   (1) RSA and RSA
+   (2) DSA and Elgamal
+   (3) DSA (sign only)
+   (4) RSA (sign only)
+   (9) ECC (sign and encrypt) *default*
+  (10) ECC (sign only)
+  (14) Existing key from card
 ```
 
-## Exporting gpg key pairs
+- My recommendation will be **(9)** same as the default
 
+```sh
+Please select which elliptic curve you want:
+   (1) Curve 25519 *default*
+   (4) NIST P-384
+   (6) Brainpool P-256
+```
+- I will choose the default as well. the famous algorithm Curve 25519
+- then you will be asked about expiration, name, email adrress, and finally the 
+master password
+
+let's untangle what happened. We have made a pair of public/private keys for 
+sigining and encrypting any kind of data 
+
+to view them 
 >for binary
 - public:   `gpg --export > pub.gpg`
 - private:  `gpg --export-secret-keys  > private.pgp`
@@ -34,13 +61,14 @@ printf("hello world");
 - public:   `gpg --armor --export > pub.asc`
 - private:  `gpg --armor --export-secret-keys > private.asc`
 
+### GPG flags
+those are some useful flags to keey in your pocket
+- list pub keys:          `gpg --list-keys`
+- list private keys:      `gpg --list-secret-keys`
+- delete pub keys:        `gpg --delete-key`
+- delete private keys:    `gpg --delete-secret-key`
+- refresh keys:           `gpg --refresh-keys`
 
-## GPG flags
+### References
 
-list pub keys:          `gpg --list-keys`
-list private keys:      `gpg --list-secret-keys`
-
-delete pub keys:        `gpg --delete-key`
-delete private keys:    `gpg --delete-secret-key`
-
-refresh keys:           `gpg --refresh-keys`
+[^1]: [What Is GPG? The Complete Guide to Open-Source Encryption](https://terrazone.io/what-is-gpg/)
