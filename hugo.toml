@@ -28,6 +28,9 @@ ignoreErrors = ["error-disable-taxonomy"]
     lineNos = false
     style = 'dracula'
     noClasses = true
+    [markup.goldmark]
+      [markup.goldmark.renderer]
+        unsafe = true
 
 [outputFormats.terminal]
   mediaType = "text/plain"
@@ -37,7 +40,7 @@ ignoreErrors = ["error-disable-taxonomy"]
 [outputs]
   home = ["HTML", "terminal"]
 
-[[menu.main]]
-name = "RSS"
-url = "/blog/index.xml"
-weight = 40
+# [[menu.main]]
+# name = "RSS"
+# url = "/blog/index.xml"
+# weight = 40

@@ -14,6 +14,14 @@
     --blockquote-color: #222;
   }
 
+  @font-face {
+      font-family: 'Leckerli One';
+      font-style: normal;
+      font-weight: 400;
+      font-display: block;
+      src: url('/fonts/leckerli.woff2') format('woff2');
+  }
+
   @media (prefers-color-scheme: dark) {
     :root {
       --background-color: #151515;
@@ -178,6 +186,53 @@
 
   main ul li p, main ol li p {
     margin: 0 !important;
+  }
+
+  .title {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 12px;
+      text-decoration: none;
+  }
+
+  .title-logo {
+      height: 1.5em;
+      width: auto;
+      display: block;
+  }
+
+  .title-text {
+      margin: 0;
+      display: inline-flex;
+      align-items: baseline;
+      font-family: 'Leckerli One', cursive;
+      font-size: 1.25em;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+  }
+
+  .char-l {
+      color: #5b9ebc;
+      font-size: 1.6em;
+      margin-right: -0.1em;
+      line-height: 0.9;
+  }
+
+  .split-w {
+      display: inline-flex;
+      align-items: baseline;
+  }
+
+  .char-v-left {
+      color: #5b9ebc;
+      font-size: 1.2em;
+      margin-right: -0.22em;
+      line-height: 0.9;
+  }
+
+  .char-v-right {
+      font-size: 1.2em;
+      line-height: 0.9;
   }
 
 </style>
