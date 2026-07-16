@@ -40,7 +40,3 @@ ignoreErrors = ["error-disable-taxonomy"]
 [outputs]
   home = ["HTML", "terminal"]
 
-# [[menu.main]]
-# name = "RSS"
-# url = "/blog/index.xml"
-# weight = 40
