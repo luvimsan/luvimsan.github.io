@@ -7,7 +7,8 @@
       {{ .Date.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }}
     </time>
   </i>
-  {{ $mins := (.RawContent | replaceRE `(?s)\+\+\+.*?\+\+\+` "" | countwords | div 212.0 | math.Ceil)}}
+  {{ $words := float (.RawContent | replaceRE `(?s)\+\+\+.*?\+\+\+` "" | countwords) }}
+  {{ $mins := math.Ceil (div $words 212.0) }}
   <span> | {{ math.Max $mins 2 }} mins read</span>
 </p>
 {{ end }}{{ end }}
