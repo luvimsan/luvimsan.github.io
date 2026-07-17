@@ -235,4 +235,36 @@
       line-height: 0.9;
   }
 
+.table-of-contents ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.table-of-contents ul ul {
+  padding-left: 1.25rem;
+}
+
+.table-of-contents a {
+  text-decoration: none;
+}
+
+.table-of-contents a:hover {
+  text-decoration: underline;
+}
+
+.table-of-contents > ul > li > a::before {
+  content: "> ";
+  display: inline-block;
+  margin-right: 0.25rem;
+  text-decoration: none !important;
+}
+
+.table-of-contents ul ul li a::before {
+  content: "├─ ";
+  display: inline-block;
+  margin-right: 0.25rem;
+  text-decoration: none !important;
+}
+
 </style>

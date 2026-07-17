@@ -1,0 +1,16 @@
+{{ with .Params.series }}
+  <div class="post-series-header" style="margin-bottom: -0.2rem; ">
+    {{ $seriesName := . }}
+    {{ if not (eq (printf "%T" .) "string") }}
+      {{ $seriesName = index . 0 }}
+    {{ end }}
+
+    {{ $seriesPage := site.GetPage (printf "/series/%s" (urlize $seriesName)) }}
+
+    {{ if $seriesPage }}
+      <span><b>Series: </b><a href="{{ $seriesPage.RelPermalink }}">{{ $seriesName }}</a></span>
+    {{ else }}
+      <span><b>Series: </b>{{ $seriesName }}</span>
+    {{ end }}
+  </div>
+{{ end }}

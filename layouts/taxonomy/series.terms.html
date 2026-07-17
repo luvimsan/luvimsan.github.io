@@ -1,0 +1,13 @@
+{{ define "main" }}
+<main style="padding-top: 1.7rem;">
+    <h2> All Blog Series</h2>
+  <ul>
+    {{ range .Data.Terms.Alphabetical }}
+      <li>
+        <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+        <small>({{ .Count }} blogs)</small>
+      </li>
+    {{ end }}
+  </ul>
+</main>
+{{ end }}

@@ -8,8 +8,10 @@ author = "Loaay Waheed"
 copyright = "Copyright © 2026, Loaay Waheed."
 enableRobotsTXT = true
 
-disableKinds = ["taxonomy"]
-ignoreErrors = ["error-disable-taxonomy"]
+[taxonomies]
+  series = "series"
+[permalinks]
+  series = "/series/:slug/"
 
 [params]
   description = "Personal portfolio and technical blog by luvimsan. open-source, linux, neovim and more..."

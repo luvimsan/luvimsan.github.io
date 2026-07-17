@@ -6,7 +6,7 @@
     {{ range (where .Site.RegularPages "Section" "blog") }}
     <li style="display: block; margin-bottom: 1.2rem;">
         <div>
-          <a href="{{ .Permalink }}" style="font-weight: bold; font-size: 1.1em;">{{ .Title }}</a>
+          <a href="{{ .Permalink }}" style="font-size: 1.0em;">{{ .Title }}</a>
         </div>
         <div>
           <time datetime="{{ .Date.Format "2006-01-02" }}" style="color: #888; font-size: 0.9em;">
