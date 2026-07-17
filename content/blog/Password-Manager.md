@@ -1,6 +1,7 @@
 +++
 date = "2026-07-14T18:41:24+03:00"
 title = "Password Manager"
+draft = true
 tags = ['linux', 'guides']
 +++
 
